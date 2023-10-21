@@ -1,0 +1,29 @@
+name: breez_sdk
+version: 0.2.6
+publish_to: none
+description: A new flutter plugin project.
+environment: 
+  sdk: '>=2.19.6 <3.0.0'
+  flutter: '>=3.7.12'
+dependencies: 
+  ffi: ^2.0.2
+  flutter_rust_bridge: 1.75.2
+  freezed: ^2.3.5
+  freezed_annotation: ^2.2.0
+  rxdart: ^0.27.7
+  flutter: 
+    sdk: flutter
+dev_dependencies: 
+  flutter_lints: ^2.0.2
+  build_runner: '<2.4.0'
+  ffigen: '<8.0.0-dev.0'
+  flutter_test: 
+    sdk: flutter
+flutter: 
+  plugin: 
+    platforms: 
+      android: 
+        package: com.breez.breez_sdk
+        pluginClass: BreezSDKPlugin
+      ios: 
+        pluginClass: BreezSDKPlugin
